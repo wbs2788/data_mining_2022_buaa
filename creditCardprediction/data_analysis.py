@@ -5,7 +5,6 @@ date:2022-05-05
 import pandas as pd
 import numpy as np
 
-
 def csv_reader(file_name):
     data = pd.read_csv(file_name)
     print('Total num of data:', len(data))
@@ -36,7 +35,7 @@ def csv_reader(file_name):
 
 
 if __name__ == '__main__':
-    train_file_name = 'train_creditcard.csv'
+    train_file_name = './/creditCardprediction/creditcard.csv'
     print('**************Training data statistics**************')
     csv_reader(train_file_name)
     test_file_name = 'test_creditcard.csv'
